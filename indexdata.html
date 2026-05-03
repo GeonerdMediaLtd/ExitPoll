@@ -1,0 +1,421 @@
+[5/3/2026 12:55 AM] Albedo: 
+
+
+
+
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+
+
+
+
+<div class="max-w-5xl mx-auto py-8 px-4">
+
+<!-- HEADER -->
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden mb-8">
+
+<div class="section-header text-white p-8">
+
+<div class="flex items-center gap-4">
+
+<i class="fa-solid fa-house text-5xl"></i>
+
+<div>
+<h1 class="text-3xl font-bold">
+Census House & Household Survey
+</h1>
+
+<p class="text-blue-100 mt-1">
+Housing and Household Characteristics
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<form id="censusForm" class="space-y-8">
+
+<!-- BASIC DETAILS -->
+<div class="bg-white rounded-3xl shadow-lg p-8">
+
+<h2 class="text-2xl font-bold mb-6 text-gray-800">
+Basic Information
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>1. Line Number</label>
+<input type="text" id="q1" name="1">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>2. Bhawan Number</label>
+<input type="text" id="q2" name="2">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>3. Makan Number</label>
+<input type="text" id="q3" name="3">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>4. Floor Material</label>
+<select id="q4" name="4">
+<option value="">Select</option>
+<option>Mud</option>
+<option>Wood/Bamboo</option>
+<option>Burnt Brick</option>
+<option>Stone</option>
+<option>Cement</option>
+<option>Mosaic/Floor Tiles</option>
+<option>Any Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>5. Wall Material</label>
+<select id="q5" name="5">
+<option value="">Select</option>
+<option>Grass/Thatch/Bamboo</option>
+<option>Plastic/Polythene</option>
+<option>Mud/Unburnt Brick</option>
+<option>Wood</option>
+<option>Stone without mortar</option>
+<option>Stone with mortar</option>
+<option>G.I. Sheets/Metal</option>
+<option>Burnt Brick</option>
+<option>Concrete</option>
+<option>Any Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>6. Roof Material</label>
+<select id="q6" name="6">
+<option value="">Select</option>
+<option>Grass/Thatch/Bamboo/Wood</option>
+<option>Plastic/Polythene</option>
+<option>Handmade Tiles</option>
+<option>Machine Made Tiles</option>
+<option>Burnt Brick</option>
+<option>Stone</option>
+<option>Slate</option>
+<option>G.I. Sheets/Metal</option>
+<option>Concrete</option>
+<option>Any Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>7. Use of Census House</label>
+<select id="q7" name="7">
+<option value="">Select</option>
+<option>Residence</option>
+<option>Residence-cum-Other Use</option>
+<option>Shop/Office</option>
+<option>School/College</option>
+<option>Hotel/Lodge</option>
+<option>Hospital</option>
+<option>Factory/Workshop</option>
+<option>Place of Worship</option>
+<option>Other Non Residential</option>
+<option>Vacant</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>8. House Condition</label>
+<select id="q8" name="8">
+<option value="">Select</option>
+<option>Good</option>
+<option>Livable</option>
+<option>Dilapidated</option>
+</select>
+</div>
+[5/3/2026 12:55 AM] Albedo: <div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>9. Family Number</label>
+<input type="text" id="q9" name="9">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>10. Total People Living in Family</label>
+<input type="number" id="q10" name="10">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>11. Mukhiya Name</label>
+<input type="text" id="q11" name="11">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>12. Sex</label>
+<select id="q12" name="12">
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Transgender</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>13. Category</label>
+<select id="q13" name="13">
+<option value="">Select</option>
+<option>Scheduled Caste (SC)</option>
+<option>Scheduled Tribe (ST)</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>14. Ownership Status</label>
+<select id="q14" name="14">
+<option value="">Select</option>
+<option>Owned</option>
+<option>Rented but another house elsewhere</option>
+<option>Rented and no owned house</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>15. Number of Rooms</label>
+<input type="number" id="q15" name="15">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>16. Number of Married Couples</label>
+<input type="number" id="q16" name="16">
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>17. Drinking Water Source</label>
+<select id="q17" name="17">
+<option value="">Select</option>
+<option>Tap Water Treated</option>
+<option>Tap Water Untreated</option>
+<option>Well</option>
+<option>Hand Pump</option>
+<option>Tube-well/Borewell</option>
+<option>Spring</option>
+<option>River/Canal</option>
+<option>Tank/Pond/Lake</option>
+<option>Bottled Water</option>
+<option>Any Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>18. Water Availability</label>
+<select id="q18" name="18">
+<option value="">Select</option>
+<option>Within premises</option>
+<option>Near premises</option>
+<option>Far away</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>19. Main Lighting Source</label>
+<select id="q19" name="19">
+<option value="">Select</option>
+<option>Electricity</option>
+<option>Kerosene</option>
+<option>Solar Energy</option>
+<option>Other Oil</option>
+<option>Other</option>
+<option>No Lighting</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>20. Toilet Availability</label>
+<select id="q20" name="20">
+<option value="">Select</option>
+<option>Yes Private</option>
+<option>Shared</option>
+<option>Public Toilet</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>21. Toilet Type</label>
+<select id="q21" name="21">
+<option value="">Select</option>
+<option>Piped Sewer</option>
+<option>Septic Tank</option>
+<option>Pit Toilet</option>
+<option>Open Drain</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>22. Wastewater Disposal</label>
+<select id="q22" name="22">
+<option value="">Select</option>
+<option>Closed Drain</option>
+<option>Open Drain</option>
+<option>No Drainage</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>23. Bathroom Availability</label>
+<select id="q23" name="23">
+<option value="">Select</option>
+<option>Bathroom Available</option>
+<option>Without Roof</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>24. LPG/PNG Connection</label>
+<select id="q24" name="24">
+<option value="">Select</option>
+<option>LPG Available</option>
+<option>LPG Not Available</option>
+</select>
+</div>
+[5/3/2026 12:55 AM] Albedo: <div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>25. Main Fuel Used for Cooking</label>
+<select id="q25" name="25">
+<option value="">Select</option>
+<option>Firewood</option>
+<option>Crop Residue</option>
+<option>Coal</option>
+<option>Kerosene</option>
+<option>LPG/PNG</option>
+<option>Electricity</option>
+<option>Biogas</option>
+<option>Other</option>
+</select>
+</div>
+
+</div>
+</div>
+
+<!-- ASSETS -->
+<div class="bg-white rounded-3xl shadow-lg p-8">
+
+<h2 class="text-2xl font-bold mb-6 text-gray-800">
+Assets & Technology
+</h2>
+
+<div class="mb-6">
+<h3 class="font-bold mb-3">26. Radio / Transistor</h3>
+
+<div class="checkbox-grid">
+<label class="checkbox-item"><input type="checkbox" name="26" value="Traditional Radio Set">Traditional Radio Set</label>
+<label class="checkbox-item"><input type="checkbox" name="26" value="Mobile/Smartphone">Mobile/Smartphone</label>
+<label class="checkbox-item"><input type="checkbox" name="26" value="Other Device">Other Device</label>
+<label class="checkbox-item"><input type="checkbox" name="26" value="No">No</label>
+</div>
+</div>
+
+<div class="mb-6">
+<h3 class="font-bold mb-3">27. Television</h3>
+
+<div class="checkbox-grid">
+<label class="checkbox-item"><input type="checkbox" name="27" value="Free to Air">Free to Air</label>
+<label class="checkbox-item"><input type="checkbox" name="27" value="DTH">DTH</label>
+<label class="checkbox-item"><input type="checkbox" name="27" value="Cable">Cable</label>
+<label class="checkbox-item"><input type="checkbox" name="27" value="No">No</label>
+</div>
+</div>
+
+<div class="mb-6">
+<h3 class="font-bold mb-3">28. Internet Access</h3>
+
+<div class="checkbox-grid">
+<label class="checkbox-item"><input type="checkbox" name="28" value="Laptop/Computer">Laptop/Computer</label>
+<label class="checkbox-item"><input type="checkbox" name="28" value="Mobile">Mobile</label>
+<label class="checkbox-item"><input type="checkbox" name="28" value="Other Device">Other Device</label>
+<label class="checkbox-item"><input type="checkbox" name="28" value="No">No</label>
+</div>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl mb-6">
+<label>29. Laptop / Computer</label>
+
+<select id="q29" name="29">
+<option value="">Select</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="mb-6">
+<h3 class="font-bold mb-3">30. Phone Facilities</h3>
+
+<div class="checkbox-grid">
+<label class="checkbox-item"><input type="checkbox" name="30" value="Telephone">Telephone</label>
+<label class="checkbox-item"><input type="checkbox" name="30" value="Smartphone">Smartphone</label>
+<label class="checkbox-item"><input type="checkbox" name="30" value="Mobile Phone">Mobile Phone</label>
+<label class="checkbox-item"><input type="checkbox" name="30" value="No">No</label>
+</div>
+</div>
+
+<div class="mb-6">
+<h3 class="font-bold mb-3">31. Vehicles</h3>
+
+<div class="checkbox-grid">
+<label class="checkbox-item"><input type="checkbox" name="31" value="Cycle">Cycle</label>
+<label class="checkbox-item"><input type="checkbox" name="31" value="Scooter">Scooter</label>
+<label class="checkbox-item"><input type="checkbox" name="31" value="Bike">Bike</label>
+<label class="checkbox-item"><input type="checkbox" name="31" value="Moped">Moped</label>
+</div>
+</div>
+
+<div class="mb-6">
+<h3 class="font-bold mb-3">32. Car / Jeep / Van</h3>
+
+<div class="checkbox-grid">
+<label class="checkbox-item"><input type="checkbox" name="32" value="Car">Car</label>
+<label class="checkbox-item"><input type="checkbox" name="32" value="Jeep">Jeep</label>
+<label class="checkbox-item"><input type="checkbox" name="32" value="Van">Van</label>
+<label class="checkbox-item"><input type="checkbox" name="32" value="None">None</label>
+</div>
+</div>
+
+<div class="question-card bg-gray-50 p-5 rounded-2xl">
+<label>33. Major Cereal consumed by the Household</label>
+[5/3/2026 12:55 AM] Albedo: <select id="q33" name="33">
+<option value="">Select</option>
+<option value="Rice">Rice</option>
+<option value="Wheat">Wheat</option>
+<option value="Jowar">Jowar</option>
+<option value="Bajra">Bajra</option>
+<option value="Maize">Maize</option>
+<option value="Other">Any Other</option>
+</select>
+</div>
+
+</div>
+
+<!-- SUBMIT BUTTON -->
+<div class="text-center">
+
+<button
+type="submit"
+class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-2xl shadow-lg transition duration-300"
+>
+Submit Survey
+</button>
+
+</div>
+
+</form>
+
+</div>
